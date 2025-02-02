@@ -1,0 +1,9 @@
+body{
+  height: 100vh;
+  background-image: url("assets/img/weather-background.png");
+  color: white;
+}
+.main__container{
+  display: flex;
+  max-width: 1030px;
+}

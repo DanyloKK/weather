@@ -1,0 +1,7 @@
+.tempreture__data{
+    margin: 40px 0 0 0;
+    display: flex;
+    max-width: 504px;
+    width:100%;
+    justify-content: space-between;
+}
