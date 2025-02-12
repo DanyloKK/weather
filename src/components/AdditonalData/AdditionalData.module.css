@@ -1,13 +1,13 @@
 .additional__data{
-    margin: 44px 0 0 0 ;
-    display: flex;
+    margin: 44px 0 0 60px;
     max-width: 504px;
     width:100%;
-    justify-content: space-between;
 }
 .additional__data_list{
+    display: flex;
     list-style: none;
     padding-left: 0;
+    justify-content: space-around;
 }
 .additional__data_item{
     margin: 0 0 12px 0;

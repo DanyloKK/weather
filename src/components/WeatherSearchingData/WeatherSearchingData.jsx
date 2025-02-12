@@ -13,9 +13,9 @@ const WeatherSearchingData = () => {
             <div>
                 <SearchForm/>
                 {selector.map((item) => (
-                    <div  key={item.id}>
+                    <div className={styles.searching__block}  key={item.id}>
                         <p className={styles.searching__location}>{item.name},<span className={styles.searching__country}>{item.sys.country}</span></p>
-                        <img src={location} alt="location"/>
+                        <img className={styles.searching__img} src={location} alt="location"/>
                     </div>
                 ))}
                 <TempretureData/>

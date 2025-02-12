@@ -1,14 +1,16 @@
 .searching__data {
     max-width: 606px;
     width: 100%;
-    border-radius: 18px;
+
     box-shadow: 0 5px 4px 0 rgba(0, 0, 0, 0.25);
     background: rgba(0, 0, 0, 0.4);
+    text-align: center;
 }
 
 .searching__location {
     font-weight: 400;
     font-size: 30px;
+    line-height: 0;
     color: #fff;
     display:inline-block;
 }
@@ -16,4 +18,8 @@
     font-size: 40px;
     font-weight: 400;
     color: #fff;
+}
+.searching__img{
+     position: relative;
+    top:12px;
 }
