@@ -20,7 +20,7 @@ const WeatherMainData = () => {
                         {item.main?.temp ? item.main.temp : "----"}
                     </p>
 
-                    <span>{item.weather[0].description}</span>
+                    <span className={styles.main__data_desc}>{item.weather[0].description}</span>
                 </div>
             ))}
         </div>

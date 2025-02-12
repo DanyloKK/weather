@@ -1,4 +1,19 @@
-.searching__data{
+.searching__data {
     max-width: 606px;
     width: 100%;
+    border-radius: 18px;
+    box-shadow: 0 5px 4px 0 rgba(0, 0, 0, 0.25);
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.searching__location {
+    font-weight: 400;
+    font-size: 30px;
+    color: #fff;
+    display:inline-block;
+}
+.searching__country{
+    font-size: 40px;
+    font-weight: 400;
+    color: #fff;
 }

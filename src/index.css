@@ -1,9 +1,17 @@
 body{
   height: 100vh;
   background-image: url("assets/img/weather-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: white;
 }
+section{
+   margin-top: 200px;
+}
 .main__container{
+  margin: 0 auto;
   display: flex;
-  max-width: 1030px;
+  max-width: 1040px;
+  justify-content: center;
 }

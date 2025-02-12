@@ -10,15 +10,17 @@ const WeatherSearchingData = () => {
     const selector = useSelector(weatherSelector.dataInfo)
     return (
         <div className={styles.searching__data}>
-            <SearchForm/>
-            {selector.map((item) => (
-                <div key={item.id}>
-                    <span>{item.name},{item.sys.country}</span>
-                    <img src={location} alt="location"/>
-                </div>
-            ))}
-            <TempretureData/>
-            <AdditionalData/>
+            <div>
+                <SearchForm/>
+                {selector.map((item) => (
+                    <div  key={item.id}>
+                        <p className={styles.searching__location}>{item.name},<span className={styles.searching__country}>{item.sys.country}</span></p>
+                        <img src={location} alt="location"/>
+                    </div>
+                ))}
+                <TempretureData/>
+                <AdditionalData/>
+            </div>
         </div>
     )
 }

@@ -1,4 +1,4 @@
-import {useState,useEffect} from 'react'
+import {useState, useEffect} from 'react'
 import {useDispatch} from "react-redux";
 import WeatherMainData from "../WeatheMainData/WeatherMainData.jsx";
 import WeatherSearchingData from "../WeatherSearchingData/WeatherSearchingData.jsx";
@@ -7,16 +7,16 @@ import {fetchInitialInfo} from "../../redux/weatherSlicer.js";
 
 function App() {
     const dispatch = useDispatch()
-    useEffect(()=>{
+    useEffect(() => {
         dispatch(fetchInitialInfo(cityName))
-    },[])
+    }, [])
     return (
-        <div>
-            <main className="main__container">
+        <section>
+            <div className="main__container">
                 <WeatherMainData/>
                 <WeatherSearchingData/>
-            </main>
-        </div>
+            </div>
+        </section>
     )
 }
 

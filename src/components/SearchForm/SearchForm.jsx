@@ -4,7 +4,6 @@ import Input from "../Input/Input.jsx"
 import {useDispatch} from "react-redux";
 import {fetchInfo} from "../../redux/weatherSlicer.js";
 import styles from "./SearchForm.module.css"
-import {useEffect} from "react";
 
 const SearchForm = () => {
     const dispatch = useDispatch()
@@ -29,11 +28,11 @@ const SearchForm = () => {
                         className={styles.searching__input}
                         name="firstName"
                         component={Input}
-                        placeholder="First Name"
+                        placeholder="Enter city name..."
                     />
 
                     <div>
-                        <Button type="submit" variant="contained">Search</Button>
+                        <Button className={styles.searching__form_btn} type="submit" variant="contained">Search</Button>
                     </div>
 
 
